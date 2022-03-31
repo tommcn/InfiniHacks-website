@@ -17,26 +17,30 @@
     <div class="container">
         <div class="vertical-center">
             <div class="content">
-                <div class="logo">
-                    <img src="assets/logo.webp" alt="InfiniHacks logo">
+                <div>
+                    <img src="assets/logo.webp" alt="InfiniHacks logo" class="logo">
                 </div>
-                <h1 class="thanks">Thank You</h1>
-                <p class="text">InfiniHacks is over. Check out the <a
-                        href="https://infinihacks.devpost.com/project-gallery" rel="noopener noreferrer" target="_blank">projects.</a>
+                <h1 class="thanks">Thank You!</h1>
+                <p class="text">InfiniHacks 2021 is over. Check out the <a href="https://infinihacks.devpost.com/project-gallery" rel="noopener noreferrer" target="_blank" style="font-weight: bold;">projects.</a>
+                <p class="text">Fear not, InfiniHacks is working on its next big project! Stay Tuned!</p>
                 </p>
                 <a href="//example.com" target="_blank" rel="noopener noreferrer">
-                    <button class="btn">Transparency Report</button>
+                    <button class="btn">View Transparency Report</button>
                 </a>
-                <br />
-                <a href="//example.com" target="_blank" rel="noopener noreferrer">
-                    <button class="btn">Original Website</button>
+                <a href="infinihacks.html" target="_blank" rel="noopener noreferrer">
+                    <button class="btn">Open Original Website</button>
                 </a>
             </div>
         </div>
     </div>
+    <div class="bottom-floater"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
     <style>
+        .bottom-floater{
+
+        }
+        
         a {
             color:#5b9797;
         }
@@ -48,7 +52,8 @@
             font-size: 1.5rem;
             color: #fff;
             text-align: center;
-            margin-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         .btn {
@@ -60,6 +65,7 @@
             color: #fff;
             font-family: 'IBM Plex Sans', sans-serif;
             margin: 1rem;
+            font-weight: bold;
         }
 
         .btn:hover {
@@ -73,7 +79,7 @@
         }
 
         .vertical-center {
-            margin: 0;
+            margin-top: 10vw;
             position: absolute;
             top: 50%;
             -ms-transform: translateY(-50%);
@@ -87,8 +93,10 @@
             width: 100vw;
         }
 
-        .content .logo {
+        .logo {
             display: inline;
+            width: 50%;
+            max-width: 400px;
         }
 
         .thanks {
