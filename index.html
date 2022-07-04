@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap" rel="stylesheet">
     
-    <title>InfiniHacks</title>
+    <title>InfiniHacks | Infinite Potential - Infinite Possibilities</title>
 </head>
 
 <body>
@@ -20,50 +20,68 @@
                 <div>
                     <img src="assets/logo.webp" alt="InfiniHacks logo" class="logo">
                 </div>
-                <h1 class="thanks">Thank You!</h1>
-                <p class="text">InfiniHacks 2021 is over. Check out the <a href="https://infinihacks.devpost.com/project-gallery" rel="noopener noreferrer" target="_blank" style="font-weight: bold;">projects.</a>
-                <p class="text">Fear not, InfiniHacks is working on its next big project! Stay Tuned!</p>
+                <h1 class="text thanks">Thank You!</h1>
+                <p class="text message">InfiniHacks 2021 is over. Check out the <a href="https://infinihacks.devpost.com/project-gallery" rel="noopener noreferrer" target="_blank" style="font-weight: bold;">projects.</a>
+                <p class="text message">Fear not, InfiniHacks is working on its next big project! Stay Tuned!</p>
                 </p>
-                <a href="//example.com" target="_blank" rel="noopener noreferrer">
-                    <button class="btn">View Transparency Report</button>
+                <a href="2021PostEvent.pdf" target="_blank" rel="noopener noreferrer">
+                    <button class="text btn">View 2021 Event Report</button>
                 </a>
                 <a href="infinihacks.html" target="_blank" rel="noopener noreferrer">
-                    <button class="btn">Open Original Website</button>
+                    <button class="text btn">Visit Original Website</button>
                 </a>
             </div>
         </div>
     </div>
-    <div class="bottom-floater"></div>
+    <div class="bottom-floater">
+        <p class="text">Made With ♥ By The InfiniHacks Team.</p>
+        <p class="text">Interested in sponsoring? Contact Us! <a href="mailto:sponsors@infinihacks.org">sponsors@infinihacks.org</a></p>
+        <p class="text">Questions? Concerns? Comments? Email us! <a href="mailto:hello@infinihacks.org">hello@infinihacks.org</a></p>
+    </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
     <style>
         .bottom-floater{
-
+            position:absolute;
+            z-index: 100;
+            bottom:0;
+            left:0;
+            margin: 1rem;
         }
         
         a {
             color:#5b9797;
+            font-weight: bold;
         }
         a:visited {
             color:#5b9797;
+            font-weight: bold;
         }
-        .text {
-            font-family: 'IBM Plex Sans', sans-serif;
+
+        .message {
             font-size: 1.5rem;
             color: #fff;
             text-align: center;
             padding-left: 1rem;
             padding-right: 1rem;
+            margin: 0.5rem;
+        }
+
+        .text {
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #fff;
+            margin: 0;
         }
 
         .btn {
-            padding: 16px;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
             background-color: #57A4A4;
             border: none;
-            border-radius: 0px;
-            font-size: 24px;
-            color: #fff;
-            font-family: 'IBM Plex Sans', sans-serif;
+            border-radius: 0;
+            font-size: 1.5rem;
             margin: 1rem;
             font-weight: bold;
         }
@@ -73,13 +91,7 @@
             cursor: pointer;
         }
 
-        .container {
-            height: 80vh;
-            position: relative;
-        }
-
         .vertical-center {
-            margin-top: 10vw;
             position: absolute;
             top: 50%;
             -ms-transform: translateY(-50%);
@@ -96,17 +108,18 @@
         .logo {
             display: inline;
             width: 50%;
-            max-width: 400px;
+            max-width: 25rem;
         }
 
         .thanks {
-            font-size: 60px;
+            font-size: 3rem;
+            margin: 1rem;
         }
 
         body,
         html {
             height: 100vh;
-            margin: 0px;
+            margin: 0;
             overflow: hidden;
         }
 
